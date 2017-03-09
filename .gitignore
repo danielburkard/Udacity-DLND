@@ -2,3 +2,6 @@
 miniconda3
 Playground
 .ipynb_checkpoints
+project 2/preprocess_*.p
+__pycache__
+project 2/cifar-10-*
