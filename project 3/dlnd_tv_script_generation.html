@@ -11983,18 +11983,16 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 <span class="sd">    Generate a dict to turn punctuation into a token.</span>
 <span class="sd">    :return: Tokenize dictionary where the key is the punctuation and the value is the token</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="nb">dict</span><span class="p">[</span><span class="s2">&quot;.&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;||period||&quot;</span>
-    <span class="nb">dict</span><span class="p">[</span><span class="s2">&quot;,&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;||comma||&quot;</span>
-    <span class="nb">dict</span><span class="p">[</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;||quotationmark||&quot;</span>
-    <span class="nb">dict</span><span class="p">[</span><span class="s2">&quot;;&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;||semicolon||&quot;</span>
-    <span class="nb">dict</span><span class="p">[</span><span class="s2">&quot;!&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;||exclamationmark||&quot;</span>
-    <span class="nb">dict</span><span class="p">[</span><span class="s2">&quot;?&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;||questionmark||&quot;</span>
-    <span class="nb">dict</span><span class="p">[</span><span class="s2">&quot;(&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;||leftparentheses||&quot;</span>
-    <span class="nb">dict</span><span class="p">[</span><span class="s2">&quot;)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;||rightparentheses||&quot;</span>
-    <span class="nb">dict</span><span class="p">[</span><span class="s2">&quot;--&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;||dash||&quot;</span>
-    <span class="nb">dict</span><span class="p">[</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;||return||&quot;</span>
-    <span class="k">return</span> <span class="nb">dict</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;.&quot;</span> <span class="p">:</span> <span class="s2">&quot;||period||&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;,&quot;</span> <span class="p">:</span> <span class="s2">&quot;||comma||&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="p">:</span> <span class="s2">&quot;||quotationmark||&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;;&quot;</span> <span class="p">:</span> <span class="s2">&quot;||semicolon||&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;!&quot;</span> <span class="p">:</span> <span class="s2">&quot;||exclamationmark||&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;?&quot;</span> <span class="p">:</span> <span class="s2">&quot;||questionmark||&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;(&quot;</span> <span class="p">:</span> <span class="s2">&quot;||leftparentheses||&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;)&quot;</span> <span class="p">:</span> <span class="s2">&quot;||rightparentheses||&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;--&quot;</span> <span class="p">:</span> <span class="s2">&quot;||dash||&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="p">:</span> <span class="s2">&quot;||return||&quot;</span><span class="p">}</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">DON&#39;T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE</span>
@@ -12714,52 +12712,52 @@ Default GPU Device: /gpu:0
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch   0 Batch    0/23   train_loss = 8.823
-Epoch   2 Batch    4/23   train_loss = 4.951
-Epoch   4 Batch    8/23   train_loss = 4.199
-Epoch   6 Batch   12/23   train_loss = 3.939
-Epoch   8 Batch   16/23   train_loss = 3.504
-Epoch  10 Batch   20/23   train_loss = 3.021
-Epoch  13 Batch    1/23   train_loss = 2.588
-Epoch  15 Batch    5/23   train_loss = 2.239
-Epoch  17 Batch    9/23   train_loss = 1.911
-Epoch  19 Batch   13/23   train_loss = 1.543
-Epoch  21 Batch   17/23   train_loss = 1.274
-Epoch  23 Batch   21/23   train_loss = 1.068
-Epoch  26 Batch    2/23   train_loss = 0.955
-Epoch  28 Batch    6/23   train_loss = 0.782
-Epoch  30 Batch   10/23   train_loss = 0.699
-Epoch  32 Batch   14/23   train_loss = 0.596
-Epoch  34 Batch   18/23   train_loss = 0.533
-Epoch  36 Batch   22/23   train_loss = 0.566
-Epoch  39 Batch    3/23   train_loss = 0.417
-Epoch  41 Batch    7/23   train_loss = 0.409
-Epoch  43 Batch   11/23   train_loss = 0.368
-Epoch  45 Batch   15/23   train_loss = 0.378
-Epoch  47 Batch   19/23   train_loss = 0.377
-Epoch  50 Batch    0/23   train_loss = 0.378
-Epoch  52 Batch    4/23   train_loss = 0.379
-Epoch  54 Batch    8/23   train_loss = 0.367
-Epoch  56 Batch   12/23   train_loss = 0.372
-Epoch  58 Batch   16/23   train_loss = 0.336
+<pre>Epoch   0 Batch    0/23   train_loss = 8.822
+Epoch   2 Batch    4/23   train_loss = 4.946
+Epoch   4 Batch    8/23   train_loss = 4.225
+Epoch   6 Batch   12/23   train_loss = 3.989
+Epoch   8 Batch   16/23   train_loss = 3.562
+Epoch  10 Batch   20/23   train_loss = 3.102
+Epoch  13 Batch    1/23   train_loss = 2.645
+Epoch  15 Batch    5/23   train_loss = 2.429
+Epoch  17 Batch    9/23   train_loss = 2.023
+Epoch  19 Batch   13/23   train_loss = 1.694
+Epoch  21 Batch   17/23   train_loss = 1.376
+Epoch  23 Batch   21/23   train_loss = 1.234
+Epoch  26 Batch    2/23   train_loss = 1.069
+Epoch  28 Batch    6/23   train_loss = 0.900
+Epoch  30 Batch   10/23   train_loss = 0.765
+Epoch  32 Batch   14/23   train_loss = 0.671
+Epoch  34 Batch   18/23   train_loss = 0.549
+Epoch  36 Batch   22/23   train_loss = 0.599
+Epoch  39 Batch    3/23   train_loss = 0.447
+Epoch  41 Batch    7/23   train_loss = 0.424
+Epoch  43 Batch   11/23   train_loss = 0.370
+Epoch  45 Batch   15/23   train_loss = 0.389
+Epoch  47 Batch   19/23   train_loss = 0.380
+Epoch  50 Batch    0/23   train_loss = 0.379
+Epoch  52 Batch    4/23   train_loss = 0.380
+Epoch  54 Batch    8/23   train_loss = 0.368
+Epoch  56 Batch   12/23   train_loss = 0.373
+Epoch  58 Batch   16/23   train_loss = 0.338
 Epoch  60 Batch   20/23   train_loss = 0.367
-Epoch  63 Batch    1/23   train_loss = 0.374
-Epoch  65 Batch    5/23   train_loss = 0.358
+Epoch  63 Batch    1/23   train_loss = 0.375
+Epoch  65 Batch    5/23   train_loss = 0.357
 Epoch  67 Batch    9/23   train_loss = 0.380
-Epoch  69 Batch   13/23   train_loss = 0.365
-Epoch  71 Batch   17/23   train_loss = 0.385
-Epoch  73 Batch   21/23   train_loss = 0.368
-Epoch  76 Batch    2/23   train_loss = 0.356
-Epoch  78 Batch    6/23   train_loss = 0.368
+Epoch  69 Batch   13/23   train_loss = 0.368
+Epoch  71 Batch   17/23   train_loss = 0.384
+Epoch  73 Batch   21/23   train_loss = 0.367
+Epoch  76 Batch    2/23   train_loss = 0.357
+Epoch  78 Batch    6/23   train_loss = 0.369
 Epoch  80 Batch   10/23   train_loss = 0.358
-Epoch  82 Batch   14/23   train_loss = 0.377
+Epoch  82 Batch   14/23   train_loss = 0.376
 Epoch  84 Batch   18/23   train_loss = 0.348
 Epoch  86 Batch   22/23   train_loss = 0.389
-Epoch  89 Batch    3/23   train_loss = 0.333
-Epoch  91 Batch    7/23   train_loss = 0.358
-Epoch  93 Batch   11/23   train_loss = 0.339
+Epoch  89 Batch    3/23   train_loss = 0.334
+Epoch  91 Batch    7/23   train_loss = 0.359
+Epoch  93 Batch   11/23   train_loss = 0.338
 Epoch  95 Batch   15/23   train_loss = 0.357
-Epoch  97 Batch   19/23   train_loss = 0.361
+Epoch  97 Batch   19/23   train_loss = 0.359
 Model Trained and Saved
 </pre>
 </div>
@@ -12910,10 +12908,9 @@ Model Trained and Saved
 <span class="sd">    :param probabilities: Probabilites of the next word</span>
 <span class="sd">    :param int_to_vocab: Dictionary of word ids as the keys and words as the values</span>
 <span class="sd">    :return: String of the predicted word</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">index_with_max_prob</span> <span class="o">=</span> <span class="n">probabilities</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">word</span> <span class="o">=</span> <span class="n">int_to_vocab</span><span class="p">[</span><span class="n">index_with_max_prob</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">word</span>
+<span class="sd">    &quot;&quot;&quot;</span>    
+    <span class="n">vocab_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">vocab</span> <span class="k">for</span> <span class="n">vocab</span> <span class="ow">in</span> <span class="n">int_to_vocab</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">vocab_list</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">probabilities</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">DON&#39;T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE</span>
@@ -13015,23 +13012,27 @@ Model Trained and Saved
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>moe_szyslak:(to kids) go grab all his money and get your head.
-moe_szyslak: man, you gotta stay. tonight&#39;s the greatest friend!
-moe_szyslak: homer, it was either cable or every night...
-homer_simpson:(loud) did you ever see paris?&#34;
-c. _montgomery_burns: letter? i got a beer.
-moe_szyslak:(not himself, then singing)
-lenny_leonard: yeah, but i hate this.
-homer_simpson:(gasps) gr-aargh! oh my god!, i don&#39;t want to my little so,(taps some teeth) c&#39;mon, homer. you know, i lost my ma at christmas.
-homer_simpson: so did it happen.
-moe_szyslak: yeah, i figured out that wrong night tonight.
-moe_szyslak:(sobs) it&#39;s our song. it&#39;s not a own muscles.(continuing)
+<pre>moe_szyslak: ze-ro.
+homer_simpson: get outta here!
+moe_szyslak: uh, listen marge, how can i put a cow.
+homer_simpson: yeah! all right, it was like i&#39;ve off the bad guy.
+homer_simpson:(magic himself, friendly) i don&#39;t know why homie comes here.
+moe_szyslak: i&#39;m afraid that too mystery, kid.
+marge_simpson: i thought you won&#39;t be that.
+moe_szyslak:(many times) oh, i don&#39;t know.
 
 
-homer_simpson:(gasps) what happened here?
-moe_szyslak: it&#39;s a snap when you use certified contractors.
-homer_simpson: oh, homer, i love you, i&#39;m not gonna stop to park my hall!
-
+homer_simpson: no, i think this calls for something.
+barney_gumble: whoa!(reading)&#34; can you just show homer?
+barney_gumble: no, wait. they let&#39;s try for something.
+seymour_skinner:(boozy) can you do?
+barney_gumble: yeah, that tramp&#39;s got the bar?
+homer_simpson: hey, who are you doing?
+moe_szyslak: no, he&#39;s tired of course.
+bart_simpson: that&#39;s right.
+homer_simpson: guys, come on, i&#39;ll have no advice with my buttons.
+moe_szyslak: moe&#39;s tavern, moe,&#34; hunger games&#39;d&#34;, in this bar.
+homer_simpson:(
 </pre>
 </div>
 </div>
