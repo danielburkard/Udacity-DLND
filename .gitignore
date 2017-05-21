@@ -6,3 +6,4 @@ project 2/preprocess_*.p
 __pycache__
 project 2/cifar-10-*
 project 2/image_classification*
+/project 5/data
